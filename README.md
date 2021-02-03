@@ -7,3 +7,7 @@ Since then, it got a full re-write of the styles and many additional cool featur
 The emphasis is on whitespace, transparency, and academic usage: [theme demo](https://alshedivat.github.io/al-folio/).
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+``` bash
+$ deploy --user c-elvira
+```
