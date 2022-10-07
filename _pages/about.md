@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a> IETR, SCEE Research Group
+subtitle: <a href='#'>Affiliations</a> IETR, SIGNAL Research Group
 
 profile:
   align: right
