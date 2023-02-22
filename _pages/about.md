@@ -2,24 +2,37 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliations</a> IETR, SCEE Research Group
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: id_elvira_2015.jpg
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>IETR UMR CNRS 6164</p>
+    <p>Signal group</p>
+    <p>CentraleSupélec, Rennes campus</p>
+    <p>35510 Cesson Sévigné, France</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Maître de Conférences at [CentraleSupélec](http://www.rennes.centralesupelec.fr/) in Rennes, France. 
+It is a permanent teaching and research position roughly equivalent to Assistant Professor.
+I am with the [SIGNAL](https://www.ietr.fr/equipe-signal-signal-processing-and-algorithm)<a id="footnote-1-ref" href="#footnote-1"><sup>1</sup></a> team of the [IETR](https://www.ietr.fr/) laboratory.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before joining Centrale Supelec, I was a **postdoctoral researcher** at Irisa - Université de Bretagne Sud and part of the [OATMIL](http://people.irisa.fr/Nicolas.Courty/OATMIL/) project.
+I am working under the supervision of [Nicolas Courty](https://people.irisa.fr/Nicolas.Courty/) and [Rémi Gribonval](https://people.irisa.fr/Remi.Gribonval/).<br>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before joining UBS, I was a **postdoctoral researcher** at Inria Rennes - Bretagne atlantique and part of the [BECOSE](http://becose.univ-lorraine.fr/en/accueil/) project.
+I was working under the supervision of [Cédric Herzet](https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Main.html), [Rémi Gribonval](https://people.irisa.fr/Remi.Gribonval/) and [Charles Soussen](http://webpages.lss.supelec.fr/charles.soussen/soussen_EN.html).<br>
+
+I was a PhD student from october, 2014 to november, 2017 at [CRIStAL](http://www.cristal.univ-lille.fr) in the beautiful city of Lille, France, under the supervision of [Pierre Chainais](http://pierrechainais.ec-lille.fr) and [Nicolas Dobigeon](http://dobigeon.perso.enseeiht.fr/index.html), and I was part of the [SigMA](http://www.cristal.univ-lille.fr/?rubrique27&eid=30) group at [CRIStAL](http://www.cristal.univ-lille.fr).
+
+
+<p id="footnote-1">
+   <sup>1</sup> 
+   "SIGNAL" is a smart play on words referring to "SIgnal processinG aNd ALgorithm". <a href="#footnote-1-ref">&#8617;</a> 
+</p>
