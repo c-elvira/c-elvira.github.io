@@ -3,12 +3,38 @@
 @string{aps = {American Physical Society}}
 @string{FRENCH = {French}}
 
+#### Preprint
+
+
+
+#### UInternational journal Journal
+
+@article{elvira2021safeSLOPE,
+	title={{Safe rules for the identification of zeros in the solutions of the SLOPE problem}},
+	author={Elvira, Clément and Herzet, Cédric},
+	year={2023},
+	journal={To appear in SIAM journal on mathematics of data science},
+	arxiv={2110.11784},
+	month = {October},
+	pdf={articles/elvira2021slope/elvira2021SLOPE.pdf},
+	hal     = {hal-03400322},
+	code    = {https://gitlab-research.centralesupelec.fr/2020elvirac/slope-screening},
+	supp = {articles/elvira2021slope/elvira2021SLOPEsuppmat.pdf},
+	bibtex_show={true},
+}
+
+
+
+
+
+#### International conferencesl
 
 @inproceedings{herzet2022Eusipco,
   TITLE = {{Region-free Safe Screening Tests for {\ell} 1 -penalized Convex Problems}},
   AUTHOR = {Herzet, C{\'e}dric and Elvira, Cl{\'e}ment and Dang, Hong-Phuong},
   URL = {https://hal-centralesupelec.archives-ouvertes.fr/hal-03806099},
-  BOOKTITLE = {{Eusipco 2022}},
+  booktitle = {2022 30th European Signal Processing Conference ({EUSIPCO})},
+  doi = {10.23919/eusipco55093.2022.9909532},
   ADDRESS = {Belgrade, Serbia},
   YEAR = {2022},
   MONTH = Aug,
@@ -24,48 +50,19 @@
 	supp    = {tecreports/Le2022TR.pdf},
 	title  = {Beyond {GAP} screening for {Lasso}  by exploiting new dual cutting half-spaces},
 	year   = {2022},
-	booktitle = {Eusipco 2022},
+	booktitle = {2022 30th European Signal Processing Conference ({EUSIPCO})},
+	doi = {10.23919/eusipco55093.2022.9909943},
 	code   = {https://gitlab.inria.fr/cherzet/holder-safe},
-	month  = {February},
+	month  = {August},
 	arxiv = {2203.00987},
 	hal   = {hal-03805966},
 	doi   = {},
 	bibtex_show={true},
 }
 
-@preprint{elvira2021safeSLOPE,
-	title={{Safe rules for the identification of zeros in the solutions of the SLOPE problem}},
-	author={Elvira, Clément and Herzet, Cédric},
-	year={2021},
-	arxiv={2110.11784},
-	month = {October},
-	pdf={articles/elvira2021slope/elvira2021SLOPE.pdf},
-	hal     = {hal-03400322},
-	code    = {https://gitlab-research.centralesupelec.fr/2020elvirac/slope-screening},
-	supp = {articles/elvira2021slope/elvira2021SLOPEsuppmat.pdf},
-	bibtex_show={true},
-}
-
-@techreport{elvira2021safeSLOPEsuppmat,
-	title  = {{Supplementary materials: Safe rules for the identification of zeros in the solutions of the SLOPE problem}},
-	author = {Elvira, Clément and Herzet, Cédric},
-	year   = {2021},
-	month  = {October},
-	pdf    = {articles/elvira2021slope/elvira2021SLOPEsuppmat.pdf},
-	bibtex_show={true},
-}
 
 
-@techreport{Elvira2021techreport,
-	author  = {Elvira, Clément and Herzet, Cédric},
-	note    = {Technical report},
-	title   = {A response to ``Fast OSCAR and OWL Regression via Safe Screening Rules'' by Bao et al.},
-	institution = {},
-	month   = {October},
-	pdf     = {tecreports/Elvira2021_responseSLOPE.pdf},
-	year    = {2021},
-	bibtex_show={true},
-}
+
 
 @inproceedings{guyard2021screen,
 	title  = {Screen \& Relax: Accelerating the resolution of Elastic-net by safe identification of the solution support},
@@ -176,6 +173,17 @@
 	bibtex_show={true},
 }
 
+@INPROCEEDINGS{dang2019eusipco,
+  author={Dang, Hong-Phuong and Elvira, Clément},
+  booktitle={2019 27th European Signal Processing Conference (EUSIPCO)}, 
+  title={Parameter-free Small Variance Asymptotics for Dictionary Learning}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.23919/EUSIPCO.2019.8903025},
+ 	bibtex_show={true},
+}
 
 @inproceedings{elvira2018CS,
 	TITLE = {{A case of exact recovery with OMP using continuous dictionaries}},
@@ -188,39 +196,6 @@
 	abstract = {We present new theoretical results on sparse recovery guarantees for a greedy algorithm, orthogonal matching pursuit (OMP), in the context of continuous dictionaries. Consider a sparse linear combination of atoms from a dictionary parameterized by some real parameters, for example, a combination of shifted versions of a basic waveform as in the context of sparse spike deconvolution. Currently, performance guarantees for greedy algorithms are typically carried out in the discrete setting associated to a grid of atom parameters, and based on, e.g., the coherence of the considered discretized dictionary \cite\{tropp2004\}. However, such analyses fail to be conclusive for grid-based approaches when the discretization step tends to zero, as the coherence goes to one. Instead, our analysis is directly conducted in the continuous setting. For atoms parametrized by a real parameter that are elements of the (infinite-dimensional) Hilbert space $L_2(\mathbb\{R\})$ of square integrable real functions, and such that the inner product between two atoms is the exponential of the negative absolute difference of the corresponding parameters, we show in the noise-free setting that OMP exactly recovers the atom parameters as well as their amplitudes, regardless of the number of distinct atoms. We exhibit a convolutive dictionary of exponentially decaying pulses for which the atoms have an analytic definition while their pairwise inner products have the prescribed form. The established guarantees rely on a proof technique which is the continuous equivalent of Tropp’s Exact Recovery Condition (ERC) \cite\{tropp2004\}. The proof exploits specific properties of the positive definite kernel between atom parameters defined by the inner product between the corresponding atoms. Future work will aim at characterizing the class of kernels for which such an analysis holds –in particular for higher dimensional parameters– and the compatibility of the guarantees with dimension reduction techniques such as sketching, which would pave the way to provably good greedy algorithms for compressive statistical learning \cite\{Gribonval2017\}. In light of the existing links between Tropp’s ERC and recovery guarantees for $\ell_1$ minimization \cite\{tropp2006\}, an interesting question is whether these guarantees extend to sparse spike recovery with total variation norm minimization~\cite\{Duval2015,candes2014\}.},
 	bibtex_show={true},
 }
-
-
-
-
-@preprint{elvira2017preprint,
-	title={Bayesian nonparametric principal component analysis},
-	author={Cl{\'e}ment Elvira and Pierre Chainais and Nicolas Dobigeon},
-	journal={arXiv preprint arXiv:1709.05667},
-	year={2017},
-	arxiv={1709.05667},
-	hal = {hal-01687236/},
-	abstract = {Principal component analysis (PCA) is very popular to perform dimension reduction. The selection of the number of significant components is essential but often based on some practical heuristics depending on the application. Only few works have proposed a probabilistic approach able to infer the number of significant components. To this purpose, this paper introduces a Bayesian nonparametric principal component analysis (BNP-PCA). The proposed model projects observations onto a random orthogonal basis which is assigned a prior distribution defined on the Stiefel manifold. The prior on factor scores involves an Indian buffet process to model the uncertainty related to the number of components. The parameters of interest as well as the nuisance parameters are finally inferred within a fully Bayesian framework via Monte Carlo sampling. A study of the (in-)consistence of the marginal maximum a posteriori estimator of the latent dimension is carried out. A new estimator of the subspace dimension is proposed. Moreover, for sake of statistical significance, a Kolmogorov-Smirnov test based on the posterior distribution of the principal components is used to refine this estimate. The behaviour of the algorithm is first studied on various synthetic examples. Finally, the proposed BNP dimension reduction approach is shown to be easily yet efficiently coupled with clustering or latent factor models within a unique framework.},
-	bibtex_show={true},
-}
-
-@article{elvira2020_TSP,
-	TITLE = {{Safe Squeezing for Antisparse Coding}},
-	AUTHOR = {Elvira, Cl{\'e}ment and Herzet, Cedric},
-	hal = {hal-02368134},
-	YEAR = {2020},
-	arxiv = {1911.07508},
-	doi = {10.1109/tsp.2020.2995192},
-	url = {https://doi.org/10.1109/tsp.2020.2995192},
-	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-	pages = {1--1},
-	journal = {{IEEE} Transactions on Signal Processing},
-	KEYWORDS = {antisparse coding ; safe screening ; scaled projected-gradient algorithm ; Frank-Wolfe algorithm},
-	PDF = {articles/elvira2020_TSP.pdf},
-	code = {https://gitlab.inria.fr/celvira/safe-squeezing},
-	abstract = {Spreading the information over all coefficients of a representation is a desirable property in many applications such as digital communication or machine learning. This so-called antisparse representation can be obtained by solving a convex program involving an l_∞-norm penalty combined with a quadratic discrepancy. In this paper, we propose a new methodology , dubbed safe squeezing, to accelerate the computation of antisparse representation. We describe a test that allows to detect saturated entries in the solution of the optimization problem. The contribution of these entries is compacted into a single vector, thus operating a form of dimensionality reduction. We propose two algorithms to solve the resulting lower dimensional problem. Numerical experiments show the effectiveness of the proposed method to detect the saturated components of the solution and illustrates the induced computational gains in the resolution of the antisparse problem.},
-	bibtex_show={true},
-}
-
 
 
 
@@ -243,19 +218,21 @@
 }
 
 
-@INPROCEEDINGS{elvira2016ssp,
-	author={Elvira, Clément and Chainais, Pierre and Dobigeon, Nicolas},
-	booktitle={2016 IEEE Statistical Signal Processing Workshop (SSP)},
-	title={Democratic prior for anti-sparse coding},
-	year={2016},
-	pages={1-4},
-	keywords={Markov processes;Monte Carlo methods;inverse problems;probability;signal representation;ℓ∞-norm regularization;Gibbs sampler;anti-sparse coding;complete dictionary;democratic distribution;joint posterior distribution;linear Gaussian inverse problem;probabilistic formulation;probability distribution;proximal Markov chain Monte Carlo algorithm;representation coefficients;Bayes methods;Encoding;Inverse problems;Monte Carlo methods;Peak to average power ratio;Probability density function;Signal processing algorithms;Anti-sparse representation;democratic distribution;inverse problem},
-	doi={10.1109/SSP.2016.7551813},
-	month={June},
-	pdf = {conferences/elvira2016ssp.pdf},
-	code = {https://github.com/c-elvira/bayesian_antisparse_algorithm},
-	hal = {hal-01433632},
-	abstract={Bayesian nonparametric (BNP) is an appealing framework to infer the complexity of a model along with the parameters. To this aim, sampling or variational methods are often used for inference. However, these methods come with numerical disadvantages for large-scale data. An alternative approach is to relax the probabilistic model into a non-probabilistic formulation which yields a scalable algorithm. One limitation of BNP approaches can be the cost of Monte-Carlo sampling for inference. Small-variance asymptotic (SVA) approaches paves the way to much cheaper though approximate methods for inference by taking benefit from a fruitful interaction between Bayesian models and optimization algorithms. In brief, SVA lets the variance of the noise (or residual error) distribution tend to zero in the optimization problem corresponding to a MAP estimator with finite noise variance for instance. We propose such an SVA analysis of a BNP dictionary learning (DL) approach that automatically adapts the size of the dictionary or the subspace dimension in an efficient way. Numerical experiments illustrate the efficiency of the proposed method.},
+@article{elvira2020_TSP,
+	TITLE = {{Safe Squeezing for Antisparse Coding}},
+	AUTHOR = {Elvira, Cl{\'e}ment and Herzet, Cedric},
+	hal = {hal-02368134},
+	YEAR = {2020},
+	arxiv = {1911.07508},
+	doi = {10.1109/tsp.2020.2995192},
+	url = {https://doi.org/10.1109/tsp.2020.2995192},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	pages = {1--1},
+	journal = {{IEEE} Transactions on Signal Processing},
+	KEYWORDS = {antisparse coding ; safe screening ; scaled projected-gradient algorithm ; Frank-Wolfe algorithm},
+	PDF = {articles/elvira2020_TSP.pdf},
+	code = {https://gitlab.inria.fr/celvira/safe-squeezing},
+	abstract = {Spreading the information over all coefficients of a representation is a desirable property in many applications such as digital communication or machine learning. This so-called antisparse representation can be obtained by solving a convex program involving an l_∞-norm penalty combined with a quadratic discrepancy. In this paper, we propose a new methodology , dubbed safe squeezing, to accelerate the computation of antisparse representation. We describe a test that allows to detect saturated entries in the solution of the optimization problem. The contribution of these entries is compacted into a single vector, thus operating a form of dimensionality reduction. We propose two algorithms to solve the resulting lower dimensional problem. Numerical experiments show the effectiveness of the proposed method to detect the saturated components of the solution and illustrates the induced computational gains in the resolution of the antisparse problem.},
 	bibtex_show={true},
 }
 
@@ -279,34 +256,8 @@
 	bibtex_show={true},
 }
 
-@INPROCEEDINGS{Elvira_IEEE_ICASSP_2017,
-	author={Clément Elvira and Pierre Chainais and Nicolas Dobigeon},
-	Booktitle = {2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-	Doi = {10.1109/ICASSP.2017.7952556},
-	Keywords = {Bayes methods;Estimation;Manifolds;Monte Carlo methods;Numerical models;Principal component analysis;Probabilistic logic;Bayesian inference;Indian buffet process;dimension reduction;distribution on the Stiefel manifold},
-	Month = {March},
-	Pages = {2247-2251},
-	Title = {Bayesian nonparametric subspace estimation},
-	Year = {2017},
-	pdf = {conferences/elvira2017iccasp.pdf},
-	hal = {hal-01687163},
-	abstract={Principal component analysis is a widely used technique to perform dimension reduction. However, selecting a finite number of significant components is essential and remains a crucial issue. Only few attempts have proposed a probabilistic approach to adaptively select this number. This paper introduces a Bayesian nonparametric model to jointly estimate the principal components and the corresponding intrinsic dimension. More precisely, the observations are projected onto a random orthogonal basis which is assigned a prior distribution defined on the Stiefel manifold. Then the factor scores take benefit of an Indian buffet process prior to model the uncertainty related to the number of components. The parameters of interest as well as the nuisance parameters are finally inferred within a fully Bayesian framework via Monte Carlo sampling. The performances of the proposed approach are assessed thanks to experiments conducted on various examples.},
-	bibtex_show={true},
-}
 
 
-@phdthesis{elvira2017phdthesis,
-	author = {Clément Elvira},
-	title = {Modèles bayésiens pour l’identification de représentations antiparcimonieuses et l’analyse en composantes principales non paramétrique},
-	language = FRENCH,
-	year = {2017},
-	month = {november},
-	school = {Centrale Lille},
-	address = {Lille, France},
-	pdf = {articles/elvira2017manuscritthese.pdf},
-	hal = {tel-01730077v2},
-	bibtex_show={true},
-}
 
 
 @inproceedings{elvira2018eusipco,
@@ -323,6 +274,42 @@
 	abstract={Bayesian nonparametric (BNP) is an appealing framework to infer the complexity of a model along with the parameters. To this aim, sampling or variational methods are often used for inference. However, these methods come with numerical disadvantages for large-scale data. An alternative approach is to relax the probabilistic model into a non-probabilistic formulation which yields a scalable algorithm. One limitation of BNP approaches can be the cost of Monte-Carlo sampling for inference. Small-variance asymptotic (SVA) approaches paves the way to much cheaper though approximate methods for inference by taking benefit from a fruitful interaction between Bayesian models and optimization algorithms. In brief, SVA lets the variance of the noise (or residual error) distribution tend to zero in the optimization problem corresponding to a MAP estimator with finite noise variance for instance. We propose such an SVA analysis of a BNP dictionary learning (DL) approach that automatically adapts the size of the dictionary or the subspace dimension in an efficient way. Numerical experiments illustrate the efficiency of the proposed method.},
 	bibtex_show={true},
 }
+
+
+@INPROCEEDINGS{Elvira_IEEE_ICASSP_2017,
+	author={Clément Elvira and Pierre Chainais and Nicolas Dobigeon},
+	Booktitle = {2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+	Doi = {10.1109/ICASSP.2017.7952556},
+	Keywords = {Bayes methods;Estimation;Manifolds;Monte Carlo methods;Numerical models;Principal component analysis;Probabilistic logic;Bayesian inference;Indian buffet process;dimension reduction;distribution on the Stiefel manifold},
+	Month = {March},
+	Pages = {2247-2251},
+	Title = {Bayesian nonparametric subspace estimation},
+	Year = {2017},
+	pdf = {conferences/elvira2017iccasp.pdf},
+	hal = {hal-01687163},
+	abstract={Principal component analysis is a widely used technique to perform dimension reduction. However, selecting a finite number of significant components is essential and remains a crucial issue. Only few attempts have proposed a probabilistic approach to adaptively select this number. This paper introduces a Bayesian nonparametric model to jointly estimate the principal components and the corresponding intrinsic dimension. More precisely, the observations are projected onto a random orthogonal basis which is assigned a prior distribution defined on the Stiefel manifold. Then the factor scores take benefit of an Indian buffet process prior to model the uncertainty related to the number of components. The parameters of interest as well as the nuisance parameters are finally inferred within a fully Bayesian framework via Monte Carlo sampling. The performances of the proposed approach are assessed thanks to experiments conducted on various examples.},
+	bibtex_show={true},
+}
+
+
+@INPROCEEDINGS{elvira2016ssp,
+	author={Elvira, Clément and Chainais, Pierre and Dobigeon, Nicolas},
+	booktitle={2016 IEEE Statistical Signal Processing Workshop (SSP)},
+	title={Democratic prior for anti-sparse coding},
+	year={2016},
+	pages={1-4},
+	keywords={Markov processes;Monte Carlo methods;inverse problems;probability;signal representation;ℓ∞-norm regularization;Gibbs sampler;anti-sparse coding;complete dictionary;democratic distribution;joint posterior distribution;linear Gaussian inverse problem;probabilistic formulation;probability distribution;proximal Markov chain Monte Carlo algorithm;representation coefficients;Bayes methods;Encoding;Inverse problems;Monte Carlo methods;Peak to average power ratio;Probability density function;Signal processing algorithms;Anti-sparse representation;democratic distribution;inverse problem},
+	doi={10.1109/SSP.2016.7551813},
+	month={June},
+	pdf = {conferences/elvira2016ssp.pdf},
+	code = {https://github.com/c-elvira/bayesian_antisparse_algorithm},
+	hal = {hal-01433632},
+	abstract={Bayesian nonparametric (BNP) is an appealing framework to infer the complexity of a model along with the parameters. To this aim, sampling or variational methods are often used for inference. However, these methods come with numerical disadvantages for large-scale data. An alternative approach is to relax the probabilistic model into a non-probabilistic formulation which yields a scalable algorithm. One limitation of BNP approaches can be the cost of Monte-Carlo sampling for inference. Small-variance asymptotic (SVA) approaches paves the way to much cheaper though approximate methods for inference by taking benefit from a fruitful interaction between Bayesian models and optimization algorithms. In brief, SVA lets the variance of the noise (or residual error) distribution tend to zero in the optimization problem corresponding to a MAP estimator with finite noise variance for instance. We propose such an SVA analysis of a BNP dictionary learning (DL) approach that automatically adapts the size of the dictionary or the subspace dimension in an efficient way. Numerical experiments illustrate the efficiency of the proposed method.},
+	bibtex_show={true},
+}
+
+
+
 
 
 #### National conferences
@@ -408,4 +395,56 @@
     hal = {hal-01691387},
     abstract = {Dans un but de robustesse, un codage antiparcimonieux répartit uniformément l’information d’un signal sur toutes les composantes de sa représentation. La recherche d’un tel codage s’exprime naturellement sous la forme d’un problème variationnel impliquant une régularisation de type $\ell_\infty$. Dans cet article une formulation bayésienne du problème est proposée, impliquant une nouvelle loi de probabilité, la loi démocratique, qui pénalise les fortes amplitudes. Cette distribution est choisie comme loi a priori sur les coefficients de représentation, couplée avec une vraisemblance gaussienne. Les estimateurs bayésiens des coefficients de représentation peuvent être approchés à l’aide d’un échantillonneur de Gibbs. Cette méthode passe cependant difficilement à l’échelle et un algorithme de Monte Carlo proximal a été proposé. On discute une nouvelle façon de choisir et régler la loi a priori sur les paramètres de nuisance. Deux simulations numériques permettent de valider le réglage des hyperparamètres et la recherche du paramètre de régularisation.},
     bibtex_show={true},
+}
+
+
+#### Technical reports
+
+
+@techreport{elvira2017preprint,
+	title={Bayesian nonparametric principal component analysis},
+	author={Cl{\'e}ment Elvira and Pierre Chainais and Nicolas Dobigeon},
+	journal={arXiv preprint arXiv:1709.05667},
+	year={2017},
+	arxiv={1709.05667},
+	hal = {hal-01687236/},
+	abstract = {Principal component analysis (PCA) is very popular to perform dimension reduction. The selection of the number of significant components is essential but often based on some practical heuristics depending on the application. Only few works have proposed a probabilistic approach able to infer the number of significant components. To this purpose, this paper introduces a Bayesian nonparametric principal component analysis (BNP-PCA). The proposed model projects observations onto a random orthogonal basis which is assigned a prior distribution defined on the Stiefel manifold. The prior on factor scores involves an Indian buffet process to model the uncertainty related to the number of components. The parameters of interest as well as the nuisance parameters are finally inferred within a fully Bayesian framework via Monte Carlo sampling. A study of the (in-)consistence of the marginal maximum a posteriori estimator of the latent dimension is carried out. A new estimator of the subspace dimension is proposed. Moreover, for sake of statistical significance, a Kolmogorov-Smirnov test based on the posterior distribution of the principal components is used to refine this estimate. The behaviour of the algorithm is first studied on various synthetic examples. Finally, the proposed BNP dimension reduction approach is shown to be easily yet efficiently coupled with clustering or latent factor models within a unique framework.},
+	bibtex_show={true},
+}
+
+
+@techreport{elvira2021safeSLOPEsuppmat,
+	title  = {{Supplementary materials: Safe rules for the identification of zeros in the solutions of the SLOPE problem}},
+	author = {Elvira, Clément and Herzet, Cédric},
+	year   = {2021},
+	month  = {October},
+	pdf    = {articles/elvira2021slope/elvira2021SLOPEsuppmat.pdf},
+	bibtex_show={true},
+}
+
+
+@techreport{Elvira2021techreport,
+	author  = {Elvira, Clément and Herzet, Cédric},
+	note    = {Technical report},
+	title   = {A response to ``Fast OSCAR and OWL Regression via Safe Screening Rules'' by Bao et al.},
+	institution = {},
+	month   = {October},
+	pdf     = {tecreports/Elvira2021_responseSLOPE.pdf},
+	year    = {2021},
+	bibtex_show={true},
+}
+
+#### Thesis National conferences
+
+@phdthesis{elvira2017phdthesis,
+	author = {Clément Elvira},
+	title = {Modèles bayésiens pour l’identification de représentations antiparcimonieuses et l’analyse en composantes principales non paramétrique},
+	language = FRENCH,
+	year = {2017},
+	month = {november},
+	school = {Centrale Lille},
+	address = {Lille, France},
+	pdf = {articles/elvira2017manuscritthese.pdf},
+	hal = {tel-01730077v2},
+	bibtex_show={true},
 }

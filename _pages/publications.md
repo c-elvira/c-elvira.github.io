@@ -15,13 +15,13 @@ order: descending
   <h2 class="preprint">Preprint(s) </h2>
   {% bibliography -f papers -q @preprint %}
 
-  <h2 class="article">International journal papers </h2>
+  <h2 class="article">International journal papers ({% bibliography_count -f papers --query @article %} entries) </h2>
   {% bibliography -f papers -q @article %}
 
-  <h2 class="international_conf">International conference papers </h2>
+  <h2 class="international_conf">International conference papers ({% bibliography_count -f papers --query @inproceedings[language!=French] %} entries) </h2>
   {% bibliography -f papers -q @inproceedings[language!=French] %}
 
-  <h2 class="national_conf">National conference papers </h2>
+  <h2 class="national_conf">National conference papers ({% bibliography_count -f papers --query @inproceedings[language=French] %} entries) </h2>
   {% bibliography -f papers -q @inproceedings[language=French] %}
 
   <h2 class="tech_report">Technical reports </h2>
