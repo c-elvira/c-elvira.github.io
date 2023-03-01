@@ -45,3 +45,15 @@
 "Tran":
   - firstname: ["Thu-Le", "T-L", "Thu Le"]
     url: "https://tranthule.blogspot.com/p/about-me.html"
+
+"Monnoyer":
+  - firstname: ["Gilles", "G."]
+    url: "https://www.researchgate.net/profile/Gilles-Monnoyer"
+
+"Arbel":
+  - firstname: ["julyan", "J."]
+    url: "https://www.julyanarbel.com/"
+
+"Naulet":
+  - firstname: ["Zacharie", "Z."]
+    url: "https://www.imo.universite-paris-saclay.fr/~zacharie.naulet/"
