@@ -55,7 +55,29 @@
 
 
 
-#### International conferencesl
+#### International conferences
+
+
+@InProceedings{guyard2024,
+  title = 	 {A New Branch-and-Bound Pruning Framework for $\ell_0$-Regularized Problems},
+  author =       {Theo, Guyard and Herzet, C\'{e}dric and Elvira, Cl\'{e}ment and Arslan, Ayse-Nur},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {48077--48096},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/theo24a/theo24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/theo24a.html},
+  abstract = 	 {We consider the resolution of learning problems involving $\ell_0$-regularization via Branch-and- Bound (BnB) algorithms. These methods explore regions of the feasible space of the problem and check whether they do not contain solutions through “pruning tests”. In standard implementations, evaluating a pruning test requires to solve a convex optimization problem, which may result in computational bottlenecks. In this paper, we present an alternative to implement pruning tests for some generic family of $\ell_0$-regularized problems. Our proposed procedure allows the simultaneous assessment of several regions and can be embedded in standard BnB implementations with a negligible computational overhead. We show through numerical simulations that our pruning strategy can improve the solving time of BnB procedures by several orders of magnitude for typical problems encountered in machine-learning applications.},
+  hal={},
+  arxiv={2406.03504},
+  bibtex_show={true},
+  code = {https://github.com/TheoGuyard/El0ps}
+}
+
 
 @inproceedings{herzet2022Eusipco,
   TITLE = {{Region-free Safe Screening Tests for {\ell} 1 -penalized Convex Problems}},
@@ -71,17 +93,22 @@
   bibtex_show={true},
 }
 
-
-@inproceedings{GuyardPeeling23,
-	arxiv  = {2302.14471},
-	hal    = {hal-04118979},
-  author = {Guyard, Théo and Monnoyer, Gilles and Elvira, Clément and Herzet, Cédric},
-  title  = {Safe peeling for l0-regularized least-squares with supplementary material},
-  booktitle = {Accepted at {EUSIPCO}},
-  year   = {2023},
+@INPROCEEDINGS{GuyardPeeling23,
+  author={Guyard, Théo and Monnoyer, Gilles and Elvira, Clément and Herzet, Cédric},
+  booktitle={2023 31st European Signal Processing Conference (EUSIPCO)}, 
+  title={Safe Peeling for $\ell_{0}$-Regularized Least-Squares}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1748-1752},
   code   = {https://github.com/TheoGuyard/BnbPeeling.jl},
+  doi = {10.23919/EUSIPCO58844.2023.10290041},
+  arxiv = {2302.14471},
+  hal = {hal-04271074},
+  supp = {https://hal.science/hal-04118979v1},
 	bibtex_show={true},
 }
+
 
 
 @inproceedings{Le2022HolderDome,
