@@ -6,8 +6,10 @@ description: publications by categories in reversed chronological order. generat
 years: []
 nav: true
 nav_order: 1
-sort_by: year
+sort_by: none
+group_by: none
 order: descending
+style: apa
 ---
 
 <!-- _pages/publications.md -->
